@@ -1,5 +1,7 @@
-body{
-  background-color: #2F3544;
+body {
+  background-image: url('https://wallpapers.com/images/hd/weather-scenarios-collage-dbk9c5n23l7e5fgb.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .App {
