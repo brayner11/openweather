@@ -55,11 +55,11 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body text-start mt-2">
-                                        <h5 className="card-text">Temperatura máxima: {(weather.main.temp_max - 273.15).toFixed(1)}ºC</h5>
-                                        <h5 className="card-text">Temperatura mínima: {(weather.main.temp_min - 273.15).toFixed(1)}ºC</h5>
-                                        <h5 className="card-text">sensación térmica: {(weather.main.feels_like- 273.15).toFixed(1)}ºC</h5>
-                                        <h5 className="card-text">Humedad: {weather.main.humidity}%</h5>
-                                        <h5 className="card-text">Velocidad del viento: {weather.wind.speed}m/s</h5>
+                                        <h5 className="card-text">Maximum temperature: {(weather.main.temp_max - 273.15).toFixed(1)}ºC</h5>
+                                        <h5 className="card-text">Minimum temperature: {(weather.main.temp_min - 273.15).toFixed(1)}ºC</h5>
+                                        <h5 className="card-text">thermal sensation: {(weather.main.feels_like- 273.15).toFixed(1)}ºC</h5>
+                                        <h5 className="card-text">Humidity: {weather.main.humidity}%</h5>
+                                        <h5 className="card-text">Wind speed: {weather.wind.speed}m/s</h5>
                                     </div>
                                     <hr/>
 
@@ -92,7 +92,7 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                     </div>
 
                 ):(
-                    <h2 className="text-light">Sin datos</h2>
+                    <h2 className="text-light">No data</h2>
                 )
             }
 
