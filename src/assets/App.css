@@ -1,42 +1,68 @@
+/* General styling for the entire page */
 body {
   background-image: url('https://wallpapers.com/images/hd/weather-scenarios-collage-dbk9c5n23l7e5fgb.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0; /* Remove default margin */
+  font-family: 'Arial', sans-serif; /* Use a more common font */
+  color: #fff; /* Set text color to white */
 }
 
+/* Styling for the main application container */
 .App {
   text-align: center;
-  
 }
 
-.input-group{
+/* Styling for input group */
+.input-group {
   width: 60%;
+  margin: 0 auto; /* Center the input group */
 }
 
-.card{
+/* Styling for the weather card */
+.card {
   max-width: 60%;
-}
-
-.card-title{
-  position: absolute;
+  margin: 20px auto;
   padding: 20px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 1s forwards; /* Apply the fadeIn animation */
 }
 
-.card-date{
-  position: absolute;
-  padding-left: 20px;
-  margin-top: 60px;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-.card-temp{
+/* Styling for card title */
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for card date */
+.card-date {
   position: absolute;
-  padding-left: 20px;
-  margin-top: 260px;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+}
+
+/* Styling for card temperature */
+.card-temp {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   font-size: 50px;
 }
 
-.card-desc{
+/* Styling for card description */
+.card-desc {
   position: absolute;
-  padding-left: 20px;
-  margin-top: 320px;
+  bottom: 70px;
+  left: 20px;
+  font-size: 18px;
 }
